@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:id="@+id/layoutUser"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:id="@+id/userImage"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/black"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Sagar"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:fontFamily="@font/bevan"/>
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="temp"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed-light"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
